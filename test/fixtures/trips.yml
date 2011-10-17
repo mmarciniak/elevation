@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  xp: 9.99
+  yp: 9.99
+  xk: 9.99
+  yk: 9.99
+
+two:
+  name: MyString
+  xp: 9.99
+  yp: 9.99
+  xk: 9.99
+  yk: 9.99
