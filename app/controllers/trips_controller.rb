@@ -1,3 +1,5 @@
+require 'elevation.rb'
+
 class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
@@ -15,6 +17,11 @@ class TripsController < ApplicationController
   def show
     @trip = Trip.find(params[:id])
 
+    elevation = ElevationAPI.new :samples => 40, :path => "#{@trip.xp},#{@trip.yp}|#{@trip.xk},#{@trip.yk}"
+    @img_link = elevation.get_chart :chtt => "#{@trip.name}", :chxl => "0:|profil trasy"
+    @min = elevation.get_min
+    @max = elevation.get_max
+        
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @trip }
