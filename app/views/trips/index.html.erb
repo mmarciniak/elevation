@@ -1,12 +1,12 @@
-<h1>Listing trips</h1>
+<h1>Lista niebezpiecznych tras w Tatrach Polskich</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Xp</th>
-    <th>Yp</th>
-    <th>Xk</th>
-    <th>Yk</th>
+    <th>Nazwa trasy</th>
+    <th>Punkt poczatkowy po wspolrz. x</th>
+    <th>Punkt poczatkowy po wspolrz. y</th>
+    <th>Punkt koncowy po wspolrz. x</th>
+    <th>Punkt koncowy po wspolrz. y</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,13 +19,13 @@
     <td><%= trip.yp %></td>
     <td><%= trip.xk %></td>
     <td><%= trip.yk %></td>
-    <td><%= link_to 'Show', trip %></td>
-    <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
-    <td><%= link_to 'Destroy', trip, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Pokaz', trip %></td>
+    <td><%= link_to 'Edytuj', edit_trip_path(trip) %></td>
+    <td><%= link_to 'Usun', trip, confirm: 'Na pewno?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Trip', new_trip_path %>
+<%= link_to 'Nowa trasa', new_trip_path %>
