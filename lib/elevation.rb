@@ -83,9 +83,10 @@ class ElevationAPI
       :chds  => "1000,2500",
       :chxl  => "0:|Elevation",
       :chxp  => "0,50", # 0 == x-axis, 50 == center
-      :chco  => "0000FF",
+      :chco  => "A66C48",
       :chls  => "2", # line thickness
-      :chm   => "B,76A4FB,0,0,0" # blue fills under the line
+      :chm   => "B,BF8C60,0,0,0"
+   #   :chm   => "B,76A4FB,0,0,0" # blue fills under the line
     }.merge!(opts)
 
     get_elevation_array
