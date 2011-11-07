@@ -15,28 +15,26 @@
    HTML5 display definitions
    ========================================================================== */
 
-
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
 
 
 /* =============================================================================
-   mine!!!!!
+   Base
    ========================================================================== */
 
-* {
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
 
-  padding: 0;
 
-  margin: 0;
+* { padding: 0; margin: 0; }
 
-}
-
-body {
-
-  background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed;
-
-  margin: 20px 0;
-
-}
+body { background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed; margin: 20px 0; }
 
 #container {
 
