@@ -1,3 +1,12 @@
+ /*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require application-pre
+ *= require_self
+ *= require application-post
+*/
+
 /*
  * HTML5 ✰ Boilerplate
  *
@@ -200,6 +209,8 @@ h2 {
 
 }
 
+
+
 h3 {
 
   font-size: 1.54em;
@@ -255,6 +266,7 @@ h3 {
   margin: 0 80px 0 320px;
 
 }
+
 
 #archives_box ul {
 
@@ -967,3 +979,4 @@ fieldset {
   border: none;
 
 }
+
