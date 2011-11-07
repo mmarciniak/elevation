@@ -15,215 +15,957 @@
    HTML5 display definitions
    ========================================================================== */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
+
 
 
 /* =============================================================================
-   Base
+   mine!!!!!
    ========================================================================== */
 
-/*
- * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
- * 2. Force vertical scrollbar in non-IE
- * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
- */
+* {
 
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body {  background-color: #F2EEAC;
-  color: #A63841;
-  text-align: center;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 18px; }
+  padding: 0;
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
- */
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-a { color: #3A3C3F; }
-a:visited { color: #D8314A; }
-a:hover { color: #E17E54; }
-a:focus { outline: thin dotted; }
-
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
-
-
-/* =============================================================================
-   Typography
-   ========================================================================== */
-
-abbr[title] { border-bottom: 1px dotted; }
-
-b, strong { font-weight: bold; }
-
-blockquote { margin: 1em 40px; }
-
-dfn { font-style: italic; }
-
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
-ins { background: #ff9; color: #000; text-decoration: none; }
-
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-
-/* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
-
-/* Improve readability of pre-formatted text in all browsers */
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
-
-small { font-size: 85%; }
-
-/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-
-/* =============================================================================
-   Lists
-   ========================================================================== */
-
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-
-
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-
-/*
- * 1. Improve image quality when scaled in IE7: h5bp.com/d
- * 2. Remove the gap between images and borders on image containers: h5bp.com/e
- */
-
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
-/*
- * Correct overflow not hidden in IE9
- */
-
-svg:not(:root) { overflow: hidden; }
-
-
-/* =============================================================================
-   Figures
-   ========================================================================== */
-
-figure { margin: 0; }
-
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-
-/* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
-
-/*
- * 1. Correct color not inheriting in IE6/7/8/9
- * 2. Correct alignment displayed oddly in IE6/7
- */
-
-legend { border: 0; *margin-left: -7px; padding: 0; }
-
-/*
- * 1. Correct font-size not inheriting in all browsers
- * 2. Remove margins in FF3/4 S5 Chrome
- * 3. Define consistent vertical alignment display in all browsers
- */
-
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-
-/*
- * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
- */
-
-button, input { line-height: normal; }
-
-/*
- * 1. Display hand cursor for clickable form elements
- * 2. Allow styling of clickable form elements in iOS
- * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
- */
-
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-
-/*
- * Consistent box sizing and appearance
- */
-
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-
-/*
- * Remove inner padding and border in FF3/4: h5bp.com/l
- */
-
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-
-/*
- * 1. Remove default vertical scrollbar in IE6/7/8/9
- * 2. Allow only vertical resizing
- */
-
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
-
-/* Colors for form validity */
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-
-/* =============================================================================
-   Tables
-   ========================================================================== */
-
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
-
-/* ==|==. primary styles =====================================================
-   Author:
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  margin: 0;
 
 }
+
+body {
+
+  background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed;
+
+  margin: 20px 0;
+
+}
+
+#container {
+
+  width: 758px;
+
+  margin: 0 auto;
+
+  padding: 0 15px 0 5px;
+
+}
+
+#header {
+
+  height: 155px;
+
+  position: relative;
+
+  background: url('images/header.gif') left bottom no-repeat;
+
+}
+
+#content {
+
+  background: #ffffff url('images/content.gif') 0 0 repeat-y;
+
+  height: 100%;
+
+}
+
+#main_column {
+
+  float: left;
+
+  width: 528px;
+
+  padding: 0 13px 0 15px;
+
+  background: url('images/main_column.gif') 0 0 no-repeat;
+
+}
+
+#side_panel {
+
+  float: right;
+
+  width: 191px;
+
+  padding: 106px 0 0 9px;
+
+  background: #ebe2d9 url('images/side_panel.gif') 0 0 repeat-y;
+
+  position: relative;
+
+}
+
+.clear {
+
+  clear: both;
+
+}
+
+#footer {
+
+  width: 778px;
+
+  margin: 0 auto;
+
+  height: 20px;
+
+  background: url('images/footer.gif') 5px 0 no-repeat;
+
+}
+
+#search_box {
+
+  position: absolute;
+
+  top: -33px;
+
+  left: -10px;
+
+  width: 220px;
+
+  height: 139px;
+
+  background: url('images/search_box.png') 0 0 no-repeat;
+
+  behavior: url('iepngfix.htc');
+
+}
+
+#archives_box {
+
+  background: url('images/archives_box.gif') 0 0 no-repeat;
+
+  padding-top: 40px;
+
+}
+
+#archives_content {
+
+  background: url('images/archives_content.gif') 0 0 repeat-y;
+
+  width: 100%;
+
+}
+
+#archives_footer {
+
+  display: block;
+
+  height: 35px;
+
+  background: url('images/archives_footer.gif') 0 0 no-repeat;
+
+}
+
+.other {
+
+  width: 184px;
+
+  overflow: hidden;
+
+  margin: 0 1px;
+
+}
+
+#design {
+
+  margin-top: 45px;
+
+}
+
+body {
+
+  font-size: 0.81em;
+
+  font-family: 'Trebuchet MS', Georgia, Tahoma;
+
+  color: #305261;
+
+}
+
+h1 {
+
+  font-size: 4.62em;
+
+  font-family: Georgia, 'Trebuchet MS', Tahoma;
+
+  text-align: right;
+
+  color: #ffffff;
+
+}
+
+h2 {
+
+  font-size: 1.85em;
+  font-family: Georgia, 'Trebuchet MS', Tahoma;
+  text-align: right;
+  margin: 2px 0 10px 0;
+  color: #ffffff;
+
+}
+
+h3 {
+
+  font-size: 1.54em;
+
+  margin: 10px 0;
+
+}
+
+#archives_box h4 {
+
+  font-family: Arial, 'Times New Roman','Trebuchet MS', Tahoma;
+
+  font-size: 1.92em;
+
+  font-weight: normal;
+
+  color: #b71600;
+
+  margin: 0 10px;
+
+}
+
+.list_box h4 {
+
+  font-family: Georgia, 'Trebuchet MS', Tahoma;
+
+  font-size: 1.38em;
+
+  font-weight: normal;
+
+  color: #917b6d;
+
+  margin: 0 6px 0 1px;
+
+  border-bottom: 1px solid #d6c7b9;
+
+  padding-bottom: 2px;
+
+  height: 100%;
+
+}
+
+#header p {
+
+  text-align: right;
+
+  color: #ffffff;
+
+  font-weight: bold;
+
+  font-family: Tahoma, Georgia, 'Trebuchet MS';
+
+  margin: 0 80px 0 320px;
+
+}
+
+#archives_box ul {
+
+  list-style-type: none;
+
+  padding-left: 15px;
+
+  font-family: 'Trebuchet MS', Arial, Tahoma;
+
+  font-size: 1.08em;
+
+  font-weight: bold;
+
+  line-height: 1.38em;
+
+}
+
+.list_box ul {
+
+  list-style-type: none;
+
+  padding: 0 6px;
+
+  font-size: 0.92em;
+
+  font-family: Arial, Tahoma, Georgia, 'Trebuchet MS';
+
+}
+
+body a {
+
+  text-decoration: none;
+
+}
+
+#header a {
+
+  color: #ffffff;
+
+}
+
+.entry a {
+
+  color: #305261;
+
+  text-decoration: underline;
+
+}
+
+h2 a:hover, .entry a:hover, .more a:hover, .entry_info a:hover {
+
+  color: #e06a31;
+
+}
+
+#side_panel a {
+
+  color: #917b6d;
+
+}
+
+.other a {
+
+  text-decoration: underline;
+
+}
+
+#archives_box a {
+
+  color: #b71600;
+
+}
+
+#archives_box a:hover {
+
+  text-decoration: underline;
+
+}
+
+.list_box a {
+
+  color: #917b6d;
+
+  display: block;
+
+  height: 100%;
+
+  padding: 4px 0;
+
+  background: url('images/side_hr.gif') left bottom repeat-x;
+
+}
+
+.list_box a:hover {
+
+  background: #f1e8df url('images/side_hr.gif') left bottom repeat-x;
+
+  color: #7d6a5e !important;
+
+}
+
+#nav a {
+
+  color: #a08f7c; 
+
+  font-weight: normal;
+
+  letter-spacing: 1px;
+
+}
+
+#nav a:hover {
+
+  border-bottom: 1px solid;
+
+}
+
+.entry_footer a {
+
+  background: #57737f;
+
+  color: #f7f7f7;
+
+  font-weight: bold;
+
+  font-family: Arial, 'Trebuchet MS', Tahoma;
+
+  padding: 2px 4px;
+
+}
+
+.link a {
+
+  float: left;
+
+  margin-right: 4px;
+
+}
+
+.link a:hover {
+
+  background: #e06a31;
+
+  color: #f7f7f7 !important;
+
+}
+
+.more a {
+
+  background: none;
+
+  color: #305261;
+
+}
+
+.entry_footer a, h2 a, .entry_info a {
+
+  border: none !important;
+
+  text-decoration: none !important;
+
+}
+
+#menu a {
+
+  color: #3a3a3a;
+
+}
+
+#menu a:hover {
+
+  color: #000000;
+
+}
+
+#page a {
+
+  color: #a08f7c;
+
+}
+
+#page a:hover, #nav a:hover {
+
+  color: #957b5d;
+
+}
+
+#design a {
+
+  color: #bda99c;
+
+}
+
+#design a:hover {
+
+  color: #a59488;
+
+}
+
+#side_panel {
+
+  color: #7d6a5e;
+
+}
+
+.list_box, .other {
+
+  margin: 15px 0;
+
+}
+
+#nav {
+
+  overflow: hidden;
+
+  height: 100%;
+
+  margin-bottom: 20px;
+
+  color: #a08f7c;
+
+  font-size: 0.85em;
+
+  font-weight: bold;
+
+  font-family: Arial, 'Trebuchet MS', Tahoma;
+
+  line-height: 1.54em;
+
+}
+
+#categories {
+
+  float: left;
+
+  width: 486px;
+
+}
+
+#rss {
+
+  float: right;
+
+  width: 32px;
+
+  height: 32px;
+
+  border: 0;
+
+}
+
+.entry {
+
+  padding-bottom: 35px;
+
+  width: 528px;
+
+  overflow: hidden;
+
+}
+
+.entry p {
+
+  margin: 10px 0;
+
+  line-height: 1.69em;
+
+}
+
+.entry img {
+
+  border: none;
+
+}
+
+.entry ol, .entry ul {
+
+  padding-left: 30px;
+
+  margin: 10px 0;
+
+}
+
+.entry pre, .entry code {
+
+  background-color: #f7f7f7;
+
+  border: 1px dashed #afafaf;
+
+  margin: 10px 0;
+
+  padding: 5px;
+
+  overflow: auto;
+
+  font-size: 1.15em;
+
+  color: #666666;
+
+  display: block;
+
+  width: 516px;
+
+}
+
+.entry blockquote {
+
+  border-left: 5px solid #afafaf;
+
+  margin: 10px;
+
+  padding-left: 10px;
+
+  color: #666666;
+
+  line-height: 1.69em;
+
+}
+
+.date, .entry_info {
+
+  font-size: 1.85em;
+
+  color: #7e7e7e;
+
+}
+
+.entry_info {
+
+  display: block;
+
+  margin-top: 10px;
+
+}
+
+.entry_footer {
+
+  padding: 4px 0 5px 0;
+
+  font-size: 0.92em;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  background: url('images/entry_hr.gif') left bottom repeat-x;
+
+}
+
+.link {
+
+  float: left;
+
+}
+
+.more {
+
+  float: right;
+
+  font-family: Arial, 'Trebuchet MS', Tahoma;
+
+  letter-spacing: 1px;
+
+}
+
+#page {
+
+  text-align: center;
+
+  font-weight: bold;
+
+  color: #a08f7c;
+
+}
+
+#page span {
+
+  font-size: 1.46em;
+
+}
+
+.arrow_left {
+
+  padding: 2px 5px 2px 22px;
+
+  background: url('images/arrow_left.gif') left 0.31em no-repeat;
+
+}
+
+.arrow_right {
+
+  padding: 2px 22px 2px 5px;
+
+  background: url('images/arrow_right.gif') right 0.31em no-repeat;
+
+}
+
+#design span {
+
+  display: block;
+
+  margin: 0 auto;
+
+  padding: 5px 0;
+
+  font-weight: bold;
+
+  color: #bda99c;
+
+}
+
+#design_author {
+
+  border-bottom: 1px solid #d6c7b9;
+
+  width: 70%;
+
+  text-align: center;
+
+}
+
+#design_title {
+
+  background: url('images/stl.gif') right center no-repeat;
+
+  width: 40%;
+
+  text-align: left;
+
+  margin-top: 3px !important;
+
+}
+
+#menu {
+
+  list-style-type: none;
+
+  position: absolute;
+
+  left: 25px;
+
+  top: 107px;
+
+  font-family: Georgia, 'Trebuchet MS', Tahoma;
+
+  font-size: 1.31em;
+
+}
+
+#menu li {
+
+  float: left;
+
+  height: 23px;
+
+  text-align: center;
+
+  padding-top: 10px;
+
+}
+
+#tab_01 {
+
+  width: 74px;
+
+  background: url('images/tab_01.gif') left bottom no-repeat;
+
+}
+
+#tab_02 {
+
+  width: 84px;
+
+  background: url('images/tab_02.gif') left bottom no-repeat;
+
+}
+
+#tab_03 {
+
+  width: 96px;
+
+  background: url('images/tab_03.gif') left bottom no-repeat;
+
+}
+
+#side_panel input, #side_panel textarea, #side_panel button {
+
+  background: #f1efe5;
+
+  border: 1px solid #b9aca0;
+
+  color: #7d6a5e;
+
+  font-family: 'Trebuchet MS', Georgia, Tahoma;
+
+  font-size: 1em;
+
+}
+
+#search_form {
+
+  position: absolute;
+
+  left: 32px;
+
+  top: 30px;
+
+  width: 200px;
+
+}
+
+#search_button input {
+
+  background: none;
+
+  border: none;
+
+  margin: 2px 0 0 7px;
+
+}
+
+#search_field input {
+
+  height: 22px;
+
+  width: 120px;
+
+  padding: 3px 0 0 0;
+
+  border: none;
+
+  background: #f1efe5 url('images/search_text.gif') 0 0 repeat-x;
+
+  outline: none;
+
+}
+
+#search_left, #search_right {
+
+  width: 6px;
+
+  height: 25px;
+
+  float: left;
+
+}
+
+#search_left {
+
+  background: url('images/search_left.gif') 0 0 no-repeat;
+
+}
+
+#search_right {
+
+  background: url('images/search_right.gif') 0 0 no-repeat;
+
+}
+
+#search_field, #search_text, #search_button {
+
+  float: left;
+
+}
+
+#single_post {
+
+  padding-bottom: 0;
+
+}
+
+.comments {
+
+  margin-top: 35px;
+
+}
+
+.comment {
+
+  margin-bottom: 35px;
+
+  width: 528px;
+
+  overflow: hidden;
+
+}
+
+.comment_header {
+
+  padding: 2px 0;
+
+  background: #f9f9f9;
+
+  border-top: 1px solid #afafaf;
+
+  border-bottom: 1px solid #afafaf;
+
+  overflow: hidden;
+
+  height: 100%;
+
+  margin-bottom: 2px;
+
+}
+
+.comment_author {
+
+  float: left;
+
+  font-weight: bold;
+
+}
+
+.comment_date {
+
+  float: right;
+
+}
+
+.comment a {
+
+  text-decoration: underline;
+
+  color: #305261;
+
+}
+
+.comment a:hover {
+
+  color: #e06a31;
+
+}
+
+.comment_header a {
+
+  text-decoration: none;
+
+}
+
+#main_column input, #main_column textarea, #main_column button {
+
+  background: #ffffff;
+
+  border: 1px solid #cccccc;
+
+  color: #305261;
+
+  font-family: 'Trebuchet MS', Georgia, Tahoma;
+
+  font-size: 1em;
+
+}
+
+#form {
+
+  margin-top: 35px;
+
+}
+
+#form ul {
+
+  list-style-type: none;
+
+}
+
+#form ul li {
+
+  padding: 0 0 4px 0;
+
+}
+
+#form span {
+
+  float: left;
+
+  width: 3.85em;
+
+}
+
+#form ul li input {
+
+  width: 200px;
+
+}
+
+#form_comment {
+
+  padding: 2px;
+
+  margin: 1px 0 4px 0;
+
+  width: 524px;
+
+}
+
+#form_button {
+
+  border: none !important;
+
+}
+
+#form_footer {
+
+  text-align: right;
+
+}
+
+fieldset {
+
+  border: none;
+
 }
