@@ -26,6 +26,10 @@
 </p>
 
 <%= image_tag @img_link %>
+
+<%= image_tag"http://maps.google.com/maps/api/staticmap?markers=#{@trip.xp},#{@trip.yp}|#{@trip.xk},#{@trip.yk}&path=#{@trip.xp},#{@trip.yp}|#{@trip.xk},#{@trip.yk}&size=500x300&sensor=false"
+%>
+
 <p>
 Minimalna wysokosc n.p.m.: <%= @min %> 
 </p>

@@ -18,9 +18,7 @@
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
   <!-- CSS: implied media="all" -->
   <%= stylesheet_link_tag "application" %>
 
@@ -33,36 +31,24 @@
 
 
 </head>
-
 <body>
-
 <div id="container">
-
 <div id="header">
 
   <h1><a href="#">Niebezpieczne trasy</a></h1>
-
   <h2>na terenie Tatr Polskich</h2>
 
   <ul id="menu">
-
     <li id="tab_01"><a href="http://localhost:3000/trips/">Start</a></li>
-
-    <li id="tab_02"><a href="http://localhost:3000/trips/contact">Kontakt</a></li>
-
+    <li id="tab_02"><a href="http://localhost:3000/trips/new">Nowa</a></li>
     <li id="tab_03"><a href="http://www.google.pl/search?q=tatry&hl=pl&prmd=imvnsb&source=lnms&tbm=isch&ei=8PK4TrahD9CM4gSiqtCQCA&sa=X&oi=mode_link&ct=mode&cd=2&ved=0CBkQ_AUoAQ&biw=1300&bih=656&sei=%208vK4TuV9qOHhBN3HpfcH">Galeria</a></li>
-
   </ul>
 
 </div>
-
 <div id="content">
-
   <div id="main_column">
-
     <div class="entry">
-
-      <span class="date"><%= l Time.now, :format => :long %></span>
+      <span class="date"><%= Time.now.strftime("%Y-%m-%d %H:%M") %></span>
 
   <%= yield %> <!--! end of #container -->
   <%= javascript_include_tag "application" %>
@@ -74,124 +60,78 @@
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
 
-
       <div class="entry_footer">
 
-        <div class="link">
-
-          <a href="#">Dodaj komentarz</a>
-
-        </div>
-
-  
-
       </div>
-
-    </div>
-
+   </div>
   </div>
 
   <div id="side_panel">
-
     <div id="search_box"></div>
-
-    <form action="http://google.com/custom" method="get">
+    <form method="get" action="http://www.google.com/search">
 
       <div id="search_form">
-
         <div id="search_field"> 
-
           <label for="search_text"> 
-
             <span id="search_left"></span> 
-
             <input id="search_text" name="q" type="text" /> 
-
             <span id="search_right"></span>
-
           </label>
-
         </div>
 
         <div id="search_button"> 
-
           <input src="images/search_button.gif" type="image" name="sa" />
-
         </div>
-
-        <input type="hidden" name="sitesearch" value="adres_strony" />
-
-        <input type="hidden" name="domains" value="adres_strony" />
-
+        <input type="hidden" name="sitesearch" value="" />
+        <input type="hidden" name="domains" value="" />
         <input type="hidden" name="hl" value="pl" />
-
       </div>
-
     </form>
 
     <div id="archives_box">
-
       <div id="archives_content">
-
-        <h4>Archiwum</h4>
-
+        <h4>Ważne!!</h4>
         <ul>
-
-          <li><a href="#">Styczeń 2008</a></li>
-
-          <li><a href="#">Luty 2008</a></li>
-
-          <li><a href="#">Marzec 2008</a></li>
-
-          <li><a href="#">Kwiecień 2008</a></li>
-
+          <li>TORP 601 100 300</a></li>
+          <li>TORP 985</a></li>
         </ul>
-
-      </div>
-
       <span id="archives_footer"></span>
-
+     </div>
     </div>
 
+
+<div id="archives_box">
+      <div id="archives_content">
+        <h4>Nie zapomnij!!</h4>
+        <ul>
+          <li>Solidne obowie</a></li>
+	  <li>Mapa</a></li>
+	  <li>Deszczak</a></li>
+          <li>Ciepłe ubranie</a></li>
+	  <li>Picie, jedzenie</a></li>
+	  <li>Środki opatrunkowe, leki</a></li>
+        </ul>
+      <span id="archives_footer"></span>
+     </div>
+    </div>
 
     <div class="list_box">
-
       <h4>Polecane strony</h4>
-
         <ul>
-
           <li><a href="http://www.tatry.info.pl/"> Internetowy przewodnik po Tatrach </a></li>
-
           <li><a href="http://www.tatry.info.pl/">Tatrzański Serwis Informacyjny </a></li>
-
           <li><a href="http://www.tpn.pl/">TPN</a></li>
-
           <li><a href="http://www.promocja.zakopane.pl/">Biuro Promocji Zakopanego</a></li>
 	  <li><a href="http://www.promocja.zakopane.pl/">TOPR</a></li>
-
         </ul>
-
     </div>
-
-    
+  
     <div id="design">
-
-     
-
     </div>
-
   </div>
-
   <div class="clear"></div>
-
 </div>
-
 </div>
-
 <div id="footer"></div>
-
 </body>
-
-
-
 </html>

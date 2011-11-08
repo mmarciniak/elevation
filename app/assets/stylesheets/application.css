@@ -179,11 +179,12 @@ body { background: url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed; mar
 
 body {
 
-  font-size: 0.81em;
+  font-size: 0.89em;
 
   font-family: 'Trebuchet MS', Georgia, Tahoma;
 
   color: #305261;
+text-align: left;
 
 }
 
@@ -208,7 +209,6 @@ h2 {
   color: #ffffff;
 
 }
-
 
 
 h3 {
@@ -538,7 +538,7 @@ a:focus { outline: thin dotted; }
 
   margin: 10px 0;
 
-  line-height: 1.69em;
+  line-height: 1.49em;
 
 }
 

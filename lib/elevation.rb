@@ -64,6 +64,7 @@ class ElevationAPI
     }.merge!(opts)
   end
 
+
   def get_chart(opts={})
     #
     # http://code.google.com/intl/pl-PL/apis/chart/image/

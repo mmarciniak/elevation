@@ -3,25 +3,20 @@
 <table>
   <tr>
     <th>Nazwa trasy</th>
-    <th>Punkt poczatkowy po wspolrz. x</th>
-    <th>Punkt poczatkowy po wspolrz. y</th>
-    <th>Punkt koncowy po wspolrz. x</th>
-    <th>Punkt koncowy po wspolrz. y</th>
-    <th></th>
-    <th></th>
-    <th></th>
+
+    <th>  </th>
+    <th>  </th>
+    <th>  </th>
   </tr>
+
 
 <% @trips.each do |trip| %>
   <tr>
     <td><%= trip.name %></td>
-    <td><%= trip.xp %></td>
-    <td><%= trip.yp %></td>
-    <td><%= trip.xk %></td>
-    <td><%= trip.yk %></td>
-    <td><%= link_to 'Pokaz', trip %></td>
-    <td><%= link_to 'Edytuj', edit_trip_path(trip) %></td>
-    <td><%= link_to 'Usun', trip, confirm: 'Na pewno?', method: :delete %></td>
+
+    <tr><td><%= link_to 'Pokaz', trip %></td></tr>
+    <tr><td><%= link_to 'Edytuj', edit_trip_path(trip) %></td></tr>
+    <tr><td><%= link_to 'Usun', trip, confirm: 'Na pewno?', method: :delete %></td></tr>
   </tr>
 <% end %>
 </table>
