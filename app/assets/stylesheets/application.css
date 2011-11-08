@@ -43,7 +43,7 @@ audio:not([controls]) { display: none; }
 
 * { padding: 0; margin: 0; }
 
-body { background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed; margin: 20px 0; }
+body { background: url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fixed; margin: 20px 0; }
 
 #container {
 
@@ -67,7 +67,7 @@ body { background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fi
 
 #content {
 
-  background: #ffffff url('images/content.gif') 0 0 repeat-y;
+  background: url('images/content.gif') 0 0 repeat-y;
 
   height: 100%;
 
@@ -93,7 +93,7 @@ body { background: #6e4b26 url('images/TatryWysokie1920Wrzesien2009.jpg') 0 0 fi
 
   padding: 106px 0 0 9px;
 
-  background: #ebe2d9 url('images/side_panel.gif') 0 0 repeat-y;
+  background: url('images/side_panel.gif') 0 0 repeat-y;
 
   position: relative;
 
@@ -362,7 +362,7 @@ h2 a:hover, .entry a:hover, .more a:hover, .entry_info a:hover {
 
 .list_box a:hover {
 
-  background: #f1e8df url('images/side_hr.gif') left bottom repeat-x;
+  background: url('images/side_hr.gif') left bottom repeat-x;
 
   color: #7d6a5e !important;
 
@@ -438,9 +438,15 @@ h2 a:hover, .entry a:hover, .more a:hover, .entry_info a:hover {
 
 #menu a:hover {
 
-  color: #000000;
+  color: #E17E54;
 
 }
+
+a { color: #3A3C3F; }
+a:visited { color: #5ECA59; }
+a:hover { color: #E17E54; }
+a:focus { outline: thin dotted; }
+
 
 #page a {
 
@@ -798,7 +804,7 @@ h2 a:hover, .entry a:hover, .more a:hover, .entry_info a:hover {
 
   border: none;
 
-  background: #f1efe5 url('images/search_text.gif') 0 0 repeat-x;
+  background: url('images/search_text.gif') 0 0 repeat-x;
 
   outline: none;
 

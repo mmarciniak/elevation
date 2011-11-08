@@ -21,7 +21,7 @@ class TripsController < ApplicationController
     @img_link = elevation.get_chart :chtt => "#{@trip.name}", :chxl => "0:|profil trasy"
     @min = elevation.get_min
     @max = elevation.get_max
-        
+  
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @trip }
