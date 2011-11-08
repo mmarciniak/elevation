@@ -11,17 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111107233125) do
-
-  create_table "comments", :force => true do |t|
-    t.integer  "trip_id"
-    t.string   "author"
-    t.string   "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "comments", ["trip_id"], :name => "index_comments_on_trip_id"
+ActiveRecord::Schema.define(:version => 20111017155740) do
 
   create_table "trips", :force => true do |t|
     t.string   "name"
