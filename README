@@ -1,0 +1,9 @@
+##Projekt Trekking
+ Aplikacja prezentująca niebezpieczne trasy na terenie Tatr Polskich
+
+#Zastosowano:
+ Ruby on Rails
+ HTML 5
+
+#Dodatkowo:
+ Wyświetlanie mapy w widoku show
